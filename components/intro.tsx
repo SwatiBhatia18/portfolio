@@ -19,14 +19,8 @@ export default function Intro() {
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
-            initial={{
-              opacity: 0,
-              scale: 0,
-            }}
-            animate={{
-              opacity: 1,
-              scale: 1,
-            }}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ opacity: 1, scale: 1 }}
             transition={{
               type: "tween",
               duration: 0.2,

@@ -7,7 +7,7 @@ import Link from "next/link";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import clsx from "clsx";
 
-const Header = () => {
+export default function Header() {
   const { activeSection, setActiveSection, setTimeOfLastClick } =
     useActiveSectionContext();
   return (
@@ -29,29 +29,23 @@ const Header = () => {
         <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] sm:flex-nowrap sm:gap-5">
           {links.map((link) => (
             <motion.li
-              key={link?.hash}
               className="h-3/4 flex items-center justify-center relative"
-              initial={{
-                opacity: 0,
-                y: -100,
-              }}
-              animate={{
-                opacity: 1,
-                y: 0,
-              }}
+              key={link.hash}
+              initial={{ y: -100, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
             >
               <Link
-                href={link?.hash}
-                onClick={() => {
-                  setActiveSection(link?.name);
-                  setTimeOfLastClick(Date.now());
-                }}
                 className={clsx(
                   "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition",
                   {
                     "text-gray-950": activeSection === link.name,
                   }
                 )}
+                href={link.hash}
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setTimeOfLastClick(Date.now());
+                }}
               >
                 {link.name}
                 {link.name === activeSection && (
@@ -72,6 +66,4 @@ const Header = () => {
       </nav>
     </header>
   );
-};
-
-export default Header;
+}
