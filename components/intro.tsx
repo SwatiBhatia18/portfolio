@@ -7,9 +7,11 @@ import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
-  const { ref } = useSectionInView("Home");
+  const { ref } = useSectionInView("Home", 0.5);
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
   return (
     <section
       ref={ref}
@@ -33,7 +35,7 @@ export default function Intro() {
               height="192"
               quality="95"
               priority={true}
-              className="rounded-full h-48 w-48 border-[0.35rem] border-white shadow-xl object-cover"
+              className="rounded-full h-48 w-48 border-[0.35rem] border-white border-solid shadow-xl object-cover"
             />
           </motion.div>
           <motion.span
@@ -64,7 +66,7 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Swati Bhatia.</span> I'm a{" "}
         <span className="font-bold">Frontend Developer</span> with{" "}
-        <span className="font-bold">3 years of experience</span>, specializing
+        <span className="font-bold">2+ years of experience</span>, specializing
         in <span className="underline">React (Next.js)</span>.
       </motion.h1>
       <motion.div
@@ -78,13 +80,17 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
         <a
-          className="group bg-gray-900 border-blue-500 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer dark:bg-white dark:border-black-500"
+          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
           href="/CV.pdf"
           download
         >

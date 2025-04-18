@@ -19,7 +19,7 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         As a <span className="font-medium">Software Engineer</span> with{" "}
-        <span className="font-medium">3 years of experience</span>, I specialize in{" "}
+        <span className="font-medium">2+ years of experience</span>, I specialize in{" "}
         <span className="font-medium">Frontend Development</span>.{" "}
         <span className="italic">What I love most about programming</span> is
         the problem-solving aspect—that <span className="underline">thrill</span>{" "}
