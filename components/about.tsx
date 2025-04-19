@@ -17,18 +17,18 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        I’m a <span className="font-medium">Software Engineer</span> with{" "}
+        I&apos;m a <span className="font-medium">Software Engineer</span> with{" "}
         <span className="font-medium">2+ years of experience</span>,
         specializing in{" "}
         <span className="font-medium">Frontend Development</span>. I thrive on
-        the <span className="italic">thrill of problem-solving</span>—there’s
+        the <span className="italic">thrill of problem-solving</span>&mdash;there&apos;s
         nothing quite like the moment a tough bug finally breaks. My core
         strengths include{" "}
         <span className="font-medium">
           React, Next.js, JavaScript, HTML, and CSS
         </span>
         , with a strong foundation in{" "}
-        <span className="font-medium">TypeScript</span>. I’m passionate about
+        <span className="font-medium">TypeScript</span>. I&apos;m passionate about
         building{" "}
         <span className="font-medium">
           scalable, high-performance applications
@@ -39,7 +39,7 @@ export default function About() {
       <p>
         <span className="italic">Beyond coding</span>, I love traveling,
         watching movies, and embracing{" "}
-        <span className="font-medium">continuous learning</span>. I'm always
+        <span className="font-medium">continuous learning</span>. I&apos;m always
         exploring new ideas and finding inspiration outside the screen.
       </p>
     </motion.section>
