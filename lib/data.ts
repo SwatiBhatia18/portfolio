@@ -113,7 +113,7 @@ export const projectsData = [
     description:
       "A gallery search app built with React, allowing users to search and view images from an external API.",
     tags: ["React", "JavaScript", "flickr API", "HTML", "CSS"],
-    imageUrl: "/imagesearch.png",
+    imageUrl: "/gallery.png",
     githubUrl: "https://github.com/SwatiBhatia18/Redux-Album",
     projectUrl: "https://gallery-search-six.vercel.app/",
   },
