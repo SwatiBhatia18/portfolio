@@ -2,11 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import githublookup from "@/public/githublookup.png";
-import traveladvisor from "@/public/traveladvisor.png";
-import openboard from "@/public/openboard.png";
-import imagesearch from "@/public/imagesearch.png";
-import portfolio from "@/public/portfolio.png";
 
 export const links = [
   {
@@ -83,7 +78,7 @@ export const projectsData = [
       "Resend",
       "Vercel",
     ],
-    imageUrl: portfolio,
+    imageUrl: "/portfolio.png",
     githubUrl: "https://github.com/SwatiBhatia18/portfolio",
     projectUrl: ""
   },  
@@ -100,7 +95,7 @@ export const projectsData = [
       "CSS",
       "HTML5",
     ],
-    imageUrl: githublookup,
+    imageUrl: "/githublookup.png",
     githubUrl: "https://github.com/SwatiBhatia18/githubLookup",
     projectUrl: "https://githublookupp.netlify.app/",
   },
@@ -109,7 +104,7 @@ export const projectsData = [
     description:
       "Created an interactive map with Google Maps API to display nearby places and details.",
     tags: ["React", "JavaScript", "Google Maps API", "HTML", "CSS"],
-    imageUrl: traveladvisor,
+    imageUrl: "/traveladvisor.png",
     githubUrl: "https://github.com/SwatiBhatia18/Travel-Advisor",
     projectUrl: "https://travel-advisor-world.netlify.app/",
   },
@@ -118,7 +113,7 @@ export const projectsData = [
     description:
       "A gallery search app built with React, allowing users to search and view images from an external API.",
     tags: ["React", "JavaScript", "flickr API", "HTML", "CSS"],
-    imageUrl: imagesearch,
+    imageUrl: "/imagesearch.png",
     githubUrl: "https://github.com/SwatiBhatia18/Redux-Album",
     projectUrl: "https://gallery-search-six.vercel.app/",
   },
@@ -127,7 +122,7 @@ export const projectsData = [
     description:
       "A drawing and painting board built with the Canvas API, allowing users to create and edit designs with various tools.",
     tags: ["JavaScript", "HTML", "CSS", "Canvas API"],
-    imageUrl: openboard,
+    imageUrl: "/openboard.png",
     githubUrl: "https://github.com/SwatiBhatia18/OpenBoard",
     projectUrl: "https://openboard1.netlify.app/",
   },
