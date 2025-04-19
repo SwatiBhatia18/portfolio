@@ -29,7 +29,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/profilePicture.jpeg"
+              src="/profilepicture.jpeg"
               alt="Swati Photo"
               width="192" // pixel dimensions
               height="192"

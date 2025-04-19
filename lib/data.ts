@@ -5,7 +5,7 @@ import { LuGraduationCap } from "react-icons/lu";
 import githublookup from "@/public/githublookup.png";
 import traveladvisor from "@/public/traveladvisor.png";
 import openboard from "@/public/openboard.png";
-import imageSearch from "@/public/imagesearch.png";
+import imagesearch from "@/public/imagesearch.png";
 import portfolio from "@/public/portfolio.png";
 
 export const links = [
@@ -118,7 +118,7 @@ export const projectsData = [
     description:
       "A gallery search app built with React, allowing users to search and view images from an external API.",
     tags: ["React", "JavaScript", "flickr API", "HTML", "CSS"],
-    imageUrl: imageSearch,
+    imageUrl: imagesearch,
     githubUrl: "https://github.com/SwatiBhatia18/Redux-Album",
     projectUrl: "https://gallery-search-six.vercel.app/",
   },
