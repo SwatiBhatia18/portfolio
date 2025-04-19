@@ -1,12 +1,11 @@
-"use client"
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionHeading from './section-heading'
-import { useSectionInView } from '@/lib/hooks'
-
+"use client";
+import React from "react";
+import { motion } from "framer-motion";
+import SectionHeading from "./section-heading";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const {ref} = useSectionInView("About")
+  const { ref } = useSectionInView("About");
   return (
     <motion.section
       ref={ref}
@@ -18,26 +17,31 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        As a <span className="font-medium">Software Engineer</span> with{" "}
-        <span className="font-medium">2+ years of experience</span>, I specialize in{" "}
-        <span className="font-medium">Frontend Development</span>.{" "}
-        <span className="italic">What I love most about programming</span> is
-        the problem-solving aspect—that <span className="underline">thrill</span>{" "}
-        of finally cracking a tough challenge. My expertise lies in{" "}
+        I’m a <span className="font-medium">Software Engineer</span> with{" "}
+        <span className="font-medium">2+ years of experience</span>,
+        specializing in{" "}
+        <span className="font-medium">Frontend Development</span>. I thrive on
+        the <span className="italic">thrill of problem-solving</span>—there’s
+        nothing quite like the moment a tough bug finally breaks. My core
+        strengths include{" "}
         <span className="font-medium">
           React, Next.js, JavaScript, HTML, and CSS
         </span>
-        , with proficiency in TypeScript. I'm passionate about{" "}
-        <span className="font-medium">building scalable, performant applications</span>{" "}
-        while continuously expanding my technical horizons.
+        , with a strong foundation in{" "}
+        <span className="font-medium">TypeScript</span>. I’m passionate about
+        building{" "}
+        <span className="font-medium">
+          scalable, high-performance applications
+        </span>{" "}
+        and continuously expanding my technical toolkit.
       </p>
 
       <p>
-        <span className="italic">Beyond coding</span>, I enjoy traveling, watching movies, and{" "}
-        <span className="font-medium">continuous learning</span>. Currently, I'm{" "}
-        <span className="font-medium">deepening my knowledge</span> of system design principles
-        to enhance my architectural thinking.
+        <span className="italic">Beyond coding</span>, I love traveling,
+        watching movies, and embracing{" "}
+        <span className="font-medium">continuous learning</span>. I'm always
+        exploring new ideas and finding inspiration outside the screen.
       </p>
     </motion.section>
-  )
+  );
 }
