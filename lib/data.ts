@@ -52,7 +52,7 @@ export const experiencesData = [
     description:
       "Collaborated cross-functionally to deliver and enhance real-time chatbot and dashboard features using React, Socket.io, and best practices—boosting delivery speed and system reliability by 30–40%.",
     icon: React.createElement(FaReact),
-    date: "2022 - 2023",
+    date: "2023 - 2024",
   },
   {
     title: "Oriserve - Software Engineer",
